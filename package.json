@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 Ohmyfood OpenClassRoom Developpeur Front-end par DevWeb13",
+  "main": "index.js",
+  "scripts": {
+    "sassAccueil": "sass --watch ./sass/style.scss ./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevWeb13/GiulianoLoic_3_26082021.git"
+  },
+  "author": "DevWeb13",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevWeb13/GiulianoLoic_3_26082021/issues"
+  },
+  "homepage": "https://github.com/DevWeb13/GiulianoLoic_3_26082021#readme"
+}
