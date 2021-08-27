@@ -2,4 +2,23 @@
   border: 1px solid blue;
 }
 
+html {
+  width: 375px;
+}
+
+body {
+  margin: 0;
+}
+
+/* **************** HEADER ********************** */
+header {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header img {
+  height: 28px;
+}
+
 /*# sourceMappingURL=style.css.map */
