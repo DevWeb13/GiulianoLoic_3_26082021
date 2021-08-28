@@ -1,3 +1,7 @@
+/* ***************** IMPORT ******************* */
+@import "./utils/variables";
+@import "./base/fonts";
+
 * {
   border: 1px solid blue;
 }
@@ -8,6 +12,7 @@ html {
 
 body {
   margin: 0;
+  font-family: "roboto", serif, sans-serif;
 }
 
 /* **************** HEADER ********************** */
@@ -16,7 +21,24 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+
   img {
     height: 28px;
+  }
+}
+
+/* ****************** .LOCATION **************** */
+.location {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-weight: 500;
+  background-color: $colorFourth;
+  box-shadow: inset 0px 6px 20px -10px rgb(0 0 0 / 30%);
+  .fas {
+    position: absolute;
+    left: 28%;
   }
 }
