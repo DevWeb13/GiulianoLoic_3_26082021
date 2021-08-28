@@ -1,3 +1,9 @@
+/* ***************** IMPORT ******************* */
+/* **************** COLOR ****************** */
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
 * {
   border: 1px solid blue;
 }
@@ -8,6 +14,7 @@ html {
 
 body {
   margin: 0;
+  font-family: "roboto", serif, sans-serif;
 }
 
 /* **************** HEADER ********************** */
@@ -19,6 +26,22 @@ header {
 }
 header img {
   height: 28px;
+}
+
+/* ****************** .LOCATION **************** */
+.location {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-weight: 500;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 6px 20px -10px rgba(0, 0, 0, 0.3);
+}
+.location .fas {
+  position: absolute;
+  left: 28%;
 }
 
 /*# sourceMappingURL=style.css.map */
