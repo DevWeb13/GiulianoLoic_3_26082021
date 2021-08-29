@@ -4,17 +4,20 @@
   font-family: "roboto";
   src: url("../fonts/Roboto-Regular.ttf");
 }
-* {
-  border: 1px solid blue;
-}
-
 html {
   width: 375px;
 }
 
-body {
+body,
+h1,
+h2,
+p {
   margin: 0;
   font-family: "roboto", serif, sans-serif;
+}
+
+h2 {
+  margin-bottom: 28px;
 }
 
 /* **************** header ********************** */
@@ -56,7 +59,6 @@ nav {
   /* == #f5f5f5(couleur sur la maquette)*/
 }
 nav h1 {
-  margin: 0;
   font-size: 1.45rem;
   letter-spacing: 1px;
 }
@@ -79,6 +81,56 @@ nav button {
   font-weight: 900;
   cursor: pointer;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* ***************** section ******************** */
+section {
+  margin: 48px 20px 68px 20px;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  margin-left: 14px;
+}
+.card__number, .card__icon, .card__sentence {
+  position: relative;
+  right: 12px;
+  margin-right: 8%;
+}
+.card__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+}
+.card__icon {
+  color: #848484;
+  font-size: 1.2rem;
+}
+.card__icon--color {
+  color: #9356dc;
+}
+.card--color {
+  background-color: #f2eafb;
 }
 
 /*# sourceMappingURL=style.css.map */
