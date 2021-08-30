@@ -154,7 +154,7 @@ section {
 
 /* **************** restaurants **************** */
 #restaurants {
-  background-color: $colorFourth;
+  background-color: lighten($color: $colorFourth, $amount: 4.4%);
   .card {
     flex-direction: column;
     overflow: hidden;
