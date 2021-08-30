@@ -2,20 +2,26 @@
 @import "./utils/variables";
 @import "./base/fonts";
 
-* {
-  border: 1px solid blue;
-}
-
-html {
-  width: 375px;
-}
+// * {
+//   border: 1px solid blue;
+// }
 
 body {
-  margin: 0;
+  width: 375px;
   font-family: "roboto", serif, sans-serif;
 }
 
-/* **************** HEADER ********************** */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+h2 {
+  margin-bottom: 25px;
+}
+
+/* **************** header ********************** */
 header {
   height: 65px;
   display: flex;
@@ -27,7 +33,7 @@ header {
   }
 }
 
-/* ****************** .LOCATION **************** */
+/* ****************** .location **************** */
 .location {
   height: 50px;
   display: flex;
@@ -40,5 +46,170 @@ header {
   .fas {
     position: absolute;
     left: 28%;
+  }
+}
+
+/* ********************* main ******************** */
+// main {
+// }
+
+/* ********************* nav ************************ */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 5%;
+  background-color: lighten(
+    $color: $colorFourth,
+    $amount: 4.4%
+  ); /* == #f5f5f5(couleur sur la maquette)*/
+  h1 {
+    font-size: 1.45rem;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: darken($color: $colorFourth, $amount: 40%);
+    margin: 11px;
+  }
+
+  button {
+    margin: 24px 0;
+    width: 66%;
+    height: 50px;
+    border-radius: 25px;
+    background: $colorSecondary;
+    background: linear-gradient(171deg, #ff79da 0%, #9356dc 100%);
+    border: none;
+    color: white;
+    font-size: 0.98rem;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px 0px rgb(0 0 0 / 30%);
+  }
+}
+
+/* ***************** section ******************** */
+section {
+  padding: 50px 20px 48px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  // height: 100%;
+}
+.card {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 22px;
+  background-color: lighten($color: $colorFourth, $amount: 4.4%);
+  border-radius: 15px;
+  box-shadow: 0px 2px 10px 0px rgb(0 0 0 / 30%);
+  margin-left: 14px;
+  &__number,
+  &__icon,
+  &__sentence {
+    position: relative;
+    right: 12px;
+    margin-right: 8%;
+  }
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    background-color: $colorPrimary;
+    color: white;
+    border-radius: 50%;
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    color: darken($color: $colorFourth, $amount: 40%);
+    font-size: 1.2rem;
+    &--color {
+      color: $colorPrimary;
+    }
+  }
+  &__text {
+    height: 75px;
+    display: flex;
+    align-items: center;
+  }
+  &--color {
+    background-color: lighten($color: $colorPrimary, $amount: 35%);
+  }
+}
+
+/* **************** restaurants **************** */
+#restaurants {
+  background-color: $colorFourth;
+  .card {
+    flex-direction: column;
+    overflow: hidden;
+    margin-left: 0;
+    margin-bottom: 19px;
+    &__photo {
+      display: flex;
+      height: 175px;
+      position: relative;
+      width: 100%;
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+      .position {
+        object-position: center;
+      }
+      .new {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 80px;
+        background-color: $colorTertiary;
+        position: absolute;
+        top: 13px;
+        right: 13px;
+        font-size: 0.85rem;
+        color: darken($color: $colorTertiary, $amount: 45);
+        font-weight: bold;
+      }
+    }
+    .textContainer {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .card__text {
+        flex-direction: column;
+        align-items: baseline;
+        padding-left: 4%;
+        font-size: 1.1rem;
+        &--bold {
+          font-weight: bold;
+          padding: 15px 0 5px 0;
+        }
+        &--color {
+          color: darken($color: $colorFourth, $amount: 40%);
+        }
+      }
+      .card__icon {
+        font-size: 1.5rem;
+        color: black;
+        margin-right: 10px;
+        margin-bottom: 8px;
+      }
+    }
   }
 }
