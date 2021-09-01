@@ -100,8 +100,7 @@ section {
 .card {
   display: flex;
   align-items: center;
-  max-width: 500px;
-  width: 100%;
+  width: 334px;
   margin-bottom: 22px;
   background-color: whitesmoke;
   border-radius: 15px;
@@ -156,13 +155,15 @@ section {
   height: 175px;
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 #restaurants .card__photo img {
   object-fit: cover;
+  object-position: bottom;
   width: 100%;
 }
 #restaurants .card__photo .position {
-  object-position: center;
+  height: 154%;
 }
 #restaurants .card__photo .new {
   display: flex;
