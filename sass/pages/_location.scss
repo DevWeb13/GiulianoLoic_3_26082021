@@ -1,0 +1,13 @@
+.location {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: $colorFourth;
+  box-shadow: inset 0px 6px 20px -10px rgb(0 0 0 / 30%);
+  .fas {
+    position: absolute;
+    left: 28%;
+  }
+}

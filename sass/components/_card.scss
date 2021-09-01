@@ -1,0 +1,9 @@
+.card {
+  @include flex-center;
+  width: 100%;
+  max-width: 340px;
+  margin-bottom: 22px;
+  background-color: lighten($color: $colorFourth, $amount: 4.4%);
+  border-radius: 15px;
+  box-shadow: 0px 2px 10px 0px rgb(0 0 0 / 30%);
+}

@@ -1,0 +1,20 @@
+@import "../utils/mixins";
+nav {
+  @include flex-center-center-column;
+  padding: 40px 5%;
+  background-color: lighten(
+    $color: $colorFourth,
+    $amount: 4.4%
+  ); /* == #f5f5f5(couleur sur la maquette)*/
+  h1 {
+    font-size: 1.45rem;
+    letter-spacing: 1px;
+  }
+  p {
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: darken($color: $colorFourth, $amount: 40%);
+    margin: 11px;
+  }
+  @import "../components/button";
+}

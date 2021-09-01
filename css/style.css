@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ***************** IMPORT ******************* */
 /* **************** COLOR ****************** */
 @font-face {
@@ -47,7 +48,6 @@ header img {
   align-items: center;
   justify-content: center;
   position: relative;
-  font-weight: 500;
   background-color: #eaeaea;
   box-shadow: inset 0px 6px 20px -10px rgba(0, 0, 0, 0.3);
 }
@@ -60,9 +60,9 @@ header img {
 /* ********************* nav ************************ */
 nav {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  flex-direction: column;
   padding: 40px 5%;
   background-color: whitesmoke;
   /* == #f5f5f5(couleur sur la maquette)*/
@@ -94,7 +94,7 @@ nav .button {
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* ***************** section ******************** */
+/* ********** section #operation ******************** */
 section {
   padding: 50px 20px 48px 20px;
   display: flex;
@@ -103,9 +103,8 @@ section {
 
 .cardsContainer {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
 }
 
 .card {
@@ -118,15 +117,19 @@ section {
   border-radius: 15px;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
 }
-.card__number, .card__icon, .card__sentence {
+
+.card {
+  /* Déclage de tout le contenu vers la gauche */
+}
+.card__number, .card__icon, .card__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   right: 12px;
   margin-right: 8%;
 }
 .card__number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 25px;
   width: 25px;
   background-color: #9356dc;
@@ -134,8 +137,6 @@ section {
   border-radius: 50%;
 }
 .card__icon {
-  display: flex;
-  align-items: center;
   color: #848484;
   font-size: 1.2rem;
 }
@@ -144,8 +145,6 @@ section {
 }
 .card__text {
   height: 75px;
-  display: flex;
-  align-items: center;
 }
 .card--color {
   background-color: #f2eafb;
@@ -194,18 +193,19 @@ section {
 }
 #restaurants a .card .textContainer {
   display: flex;
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
 }
 #restaurants a .card .textContainer .card__text {
   flex-direction: column;
   align-items: baseline;
+  position: sticky;
   padding-left: 4%;
   font-size: 1.1rem;
+  line-height: 26px;
 }
 #restaurants a .card .textContainer .card__text--bold {
   font-weight: bold;
-  padding: 15px 0 5px 0;
 }
 #restaurants a .card .textContainer .card__text--color {
   color: #848484;

@@ -1,0 +1,7 @@
+header {
+  height: 65px;
+  @include flex-center-center;
+  img {
+    height: 28px;
+  }
+}
