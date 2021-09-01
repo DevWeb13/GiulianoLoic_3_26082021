@@ -20,6 +20,10 @@ p {
 h2 {
   margin-bottom: 25px;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 
 /* **************** header ********************** */
 header {
@@ -210,6 +214,34 @@ section {
         color: black;
         margin-right: 10px;
         margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+/* ******************** footer ***************** */
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 0 0 15px 20px;
+  h3 {
+    font-family: "shrikhand", serif, sans-serif;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      i {
+        margin-right: 10px;
+      }
+      .fa-hands-helping {
+        font-size: 0.7rem;
       }
     }
   }
