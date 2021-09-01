@@ -43,10 +43,10 @@ header img {
 
 /* ****************** .location **************** */
 .location {
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
   position: relative;
   background-color: #eaeaea;
   box-shadow: inset 0px 6px 20px -10px rgba(0, 0, 0, 0.3);
@@ -92,6 +92,12 @@ nav .button {
   font-weight: 900;
   cursor: pointer;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+}
+nav .button:hover {
+  /* Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir.
+  L’ombre portée devra également être plus visible.*/
+  background: linear-gradient(171deg, #ff93e1 0%, #a16be0 100%);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.7);
 }
 
 /* ********** section #operation ******************** */

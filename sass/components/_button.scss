@@ -7,10 +7,20 @@
   height: 50px;
   border-radius: 25px;
   background: $colorSecondary;
-  background: linear-gradient(171deg, #ff79da 0%, #9356dc 100%);
+  background: $colorGradient;
   border: none;
   color: white;
   font-weight: 900;
   cursor: pointer;
   box-shadow: 0px 2px 10px 0px rgb(0 0 0 / 30%);
+  &:hover {
+    /* Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir.
+L’ombre portée devra également être plus visible.*/
+    background: linear-gradient(
+      171deg,
+      lighten($colorSecondary, 5%) 0%,
+      lighten($colorPrimary, 5%) 100%
+    );
+    box-shadow: 0px 2px 10px 0px rgb(0 0 0 / 70%);
+  }
 }
