@@ -26,7 +26,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 /* **************** header ********************** */
@@ -77,7 +77,10 @@ nav p {
   color: #848484;
   margin: 11px;
 }
-nav button {
+nav .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 24px 0;
   width: 66%;
   height: 50px;
@@ -86,7 +89,6 @@ nav button {
   background: linear-gradient(171deg, #ff79da 0%, #9356dc 100%);
   border: none;
   color: white;
-  font-size: 0.98rem;
   font-weight: 900;
   cursor: pointer;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
@@ -153,28 +155,30 @@ section {
 #restaurants {
   background-color: whitesmoke;
 }
-#restaurants .card {
-  flex-direction: column;
-  overflow: hidden;
-  margin-left: 0;
+#restaurants a {
   margin-bottom: 19px;
 }
-#restaurants .card__photo {
+#restaurants a .card {
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0;
+}
+#restaurants a .card__photo {
   display: flex;
   height: 175px;
   position: relative;
   width: 100%;
   overflow: hidden;
 }
-#restaurants .card__photo img {
+#restaurants a .card__photo img {
   object-fit: cover;
   object-position: bottom;
   width: 100%;
 }
-#restaurants .card__photo .position {
+#restaurants a .card__photo .position {
   height: 154%;
 }
-#restaurants .card__photo .new {
+#restaurants a .card__photo .new {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,25 +192,25 @@ section {
   color: #217460;
   font-weight: bold;
 }
-#restaurants .card .textContainer {
+#restaurants a .card .textContainer {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-#restaurants .card .textContainer .card__text {
+#restaurants a .card .textContainer .card__text {
   flex-direction: column;
   align-items: baseline;
   padding-left: 4%;
   font-size: 1.1rem;
 }
-#restaurants .card .textContainer .card__text--bold {
+#restaurants a .card .textContainer .card__text--bold {
   font-weight: bold;
   padding: 15px 0 5px 0;
 }
-#restaurants .card .textContainer .card__text--color {
+#restaurants a .card .textContainer .card__text--color {
   color: #848484;
 }
-#restaurants .card .textContainer .card__icon {
+#restaurants a .card .textContainer .card__icon {
   font-size: 1.5rem;
   color: black;
   margin-right: 10px;
@@ -239,6 +243,9 @@ footer ul li i {
 }
 footer ul li .fa-hands-helping {
   font-size: 0.7rem;
+}
+footer ul li a {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

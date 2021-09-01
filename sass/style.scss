@@ -22,7 +22,7 @@ h2 {
 }
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 /* **************** header ********************** */
@@ -80,7 +80,10 @@ nav {
     margin: 11px;
   }
 
-  button {
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 24px 0;
     width: 66%;
     height: 50px;
@@ -89,7 +92,6 @@ nav {
     background: linear-gradient(171deg, #ff79da 0%, #9356dc 100%);
     border: none;
     color: white;
-    font-size: 0.98rem;
     font-weight: 900;
     cursor: pointer;
     box-shadow: 0px 2px 10px 0px rgb(0 0 0 / 30%);
@@ -158,62 +160,65 @@ section {
 /* **************** restaurants **************** */
 #restaurants {
   background-color: lighten($color: $colorFourth, $amount: 4.4%);
-  .card {
-    flex-direction: column;
-    overflow: hidden;
-    margin-left: 0;
+  a {
     margin-bottom: 19px;
-    &__photo {
-      display: flex;
-      height: 175px;
-      position: relative;
-      width: 100%;
+    .card {
+      flex-direction: column;
       overflow: hidden;
-      img {
-        object-fit: cover;
-        object-position: bottom;
-        width: 100%;
-      }
-      .position {
-        height: 154%;
-      }
-      .new {
+      margin: 0;
+
+      &__photo {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 30px;
-        width: 80px;
-        background-color: $colorTertiary;
-        position: absolute;
-        top: 13px;
-        right: 13px;
-        font-size: 0.85rem;
-        color: darken($color: $colorTertiary, $amount: 45);
-        font-weight: bold;
-      }
-    }
-    .textContainer {
-      display: flex;
-      width: 100%;
-      justify-content: space-between;
-      .card__text {
-        flex-direction: column;
-        align-items: baseline;
-        padding-left: 4%;
-        font-size: 1.1rem;
-        &--bold {
+        height: 175px;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        img {
+          object-fit: cover;
+          object-position: bottom;
+          width: 100%;
+        }
+        .position {
+          height: 154%;
+        }
+        .new {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 30px;
+          width: 80px;
+          background-color: $colorTertiary;
+          position: absolute;
+          top: 13px;
+          right: 13px;
+          font-size: 0.85rem;
+          color: darken($color: $colorTertiary, $amount: 45);
           font-weight: bold;
-          padding: 15px 0 5px 0;
-        }
-        &--color {
-          color: darken($color: $colorFourth, $amount: 40%);
         }
       }
-      .card__icon {
-        font-size: 1.5rem;
-        color: black;
-        margin-right: 10px;
-        margin-bottom: 8px;
+      .textContainer {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .card__text {
+          flex-direction: column;
+          align-items: baseline;
+          padding-left: 4%;
+          font-size: 1.1rem;
+          &--bold {
+            font-weight: bold;
+            padding: 15px 0 5px 0;
+          }
+          &--color {
+            color: darken($color: $colorFourth, $amount: 40%);
+          }
+        }
+        .card__icon {
+          font-size: 1.5rem;
+          color: black;
+          margin-right: 10px;
+          margin-bottom: 8px;
+        }
       }
     }
   }
@@ -242,6 +247,9 @@ footer {
       }
       .fa-hands-helping {
         font-size: 0.7rem;
+      }
+      a {
+        color: white;
       }
     }
   }
