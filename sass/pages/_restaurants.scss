@@ -56,6 +56,32 @@
           color: black;
           margin-right: 10px;
           margin-bottom: 8px;
+
+          /* À terme, les visiteurs pourront sauvegarder leurs menus préférés. Pour ça, un
+            bouton "J’aime" en forme de cœur est présent sur la maquette. Au clic, il devra se
+            remplir progressivement. Pour cette première version, l’effet peut être apparaître au
+            survol sur desktop au lieu du clic. */
+          &:hover {
+            .far {
+              // display: none;
+              position: absolute;
+            }
+            .fas {
+              display: block;
+              animation-name: hearth;
+              animation-duration: 2.5s;
+              animation-timing-function: ease-in-out;
+              animation-delay: 0s;
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+            }
+          }
+          .fas {
+            display: none;
+            background: -webkit-linear-gradient(#ff79da, #9356dc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
         }
       }
     }

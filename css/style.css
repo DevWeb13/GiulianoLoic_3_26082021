@@ -1,6 +1,14 @@
 @charset "UTF-8";
 /* ***************** IMPORT ******************* */
 /* **************** COLOR ****************** */
+@keyframes hearth {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @font-face {
   font-family: "roboto";
   src: url("/fonts/Roboto/Roboto-Regular.ttf");
@@ -43,10 +51,10 @@ header img {
 
 /* ****************** .location **************** */
 .location {
-  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 50px;
   position: relative;
   background-color: #eaeaea;
   box-shadow: inset 0px 6px 20px -10px rgba(0, 0, 0, 0.3);
@@ -63,6 +71,7 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
   padding: 40px 5%;
   background-color: whitesmoke;
   /* == #f5f5f5(couleur sur la maquette)*/
@@ -221,6 +230,28 @@ section {
   color: black;
   margin-right: 10px;
   margin-bottom: 8px;
+  /* À terme, les visiteurs pourront sauvegarder leurs menus préférés. Pour ça, un
+    bouton "J’aime" en forme de cœur est présent sur la maquette. Au clic, il devra se
+    remplir progressivement. Pour cette première version, l’effet peut être apparaître au
+    survol sur desktop au lieu du clic. */
+}
+#restaurants a .card .textContainer .card__icon:hover .far {
+  position: absolute;
+}
+#restaurants a .card .textContainer .card__icon:hover .fas {
+  display: block;
+  animation-name: hearth;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+#restaurants a .card .textContainer .card__icon .fas {
+  display: none;
+  background: -webkit-linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ******************** footer ***************** */

@@ -1,5 +1,6 @@
 nav {
   @include flex-center-center-column;
+  text-align: center;
   padding: 40px 5%;
   background-color: lighten(
     $color: $colorFourth,
