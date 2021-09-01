@@ -43,10 +43,10 @@ header img {
 
 /* ****************** .location **************** */
 .location {
-  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 50px;
   position: relative;
   background-color: #eaeaea;
   box-shadow: inset 0px 6px 20px -10px rgba(0, 0, 0, 0.3);
