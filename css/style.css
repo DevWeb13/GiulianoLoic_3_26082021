@@ -44,22 +44,24 @@ a {
   background: white;
   font-size: 2rem;
   animation: loader;
-  animation-duration: 3s;
+  animation-duration: 300s;
   animation-fill-mode: both;
   animation-iteration-count: 1;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
+.loader::after {
+  content: "";
+}
+
 @keyframes loader {
-  0% {
-    opacity: 1;
-  }
   99% {
+    height: 100vh;
     opacity: 1;
-    z-index: 2;
   }
   100% {
-    display: none;
+    height: 0;
     opacity: 0;
-    z-index: -1;
   }
 }
 /* **************** header ********************** */

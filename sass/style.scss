@@ -39,46 +39,45 @@ a {
   background: white;
   font-size: 2rem;
   animation: loader;
-  animation-duration: 3s;
+  animation-duration: 300s;
   animation-fill-mode: both;
   animation-iteration-count: 1;
-  .fas {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  &::after {
+    content: "\f3cd";
   }
-  // .icon-1 {
-  //   animation: loader;
-  //   animation-duration: 10s;
-  //   animation-fill-mode: both;
-  //   animation-iteration-count: infinite;
-  // }
-  // .icon-2 {
-  //   animation: loader;
-  //   animation-duration: 10s;
-  //   animation-fill-mode: forwards;
-  //   animation-iteration-count: infinite;
-  //   animation-delay: 10s;
-  // }
-  // .icon-3 {
-  //   animation: loader;
-  //   animation-duration: 10s;
-  //   animation-fill-mode: forwards;
-  //   animation-iteration-count: infinite;
-  //   animation-delay: 20s;
-  // }
 }
 @keyframes loader {
-  0% {
-    opacity: 1;
-  }
   99% {
+    height: 100vh;
     opacity: 1;
-    z-index: 2;
   }
   100% {
-    display: none;
+    height: 0;
     opacity: 0;
-    z-index: -1;
   }
 }
+// .icon-1 {
+//   animation: loader;
+//   animation-duration: 10s;
+//   animation-fill-mode: both;
+//   animation-iteration-count: infinite;
+// }
+// .icon-2 {
+//   animation: loader;
+//   animation-duration: 10s;
+//   animation-fill-mode: forwards;
+//   animation-iteration-count: infinite;
+//   animation-delay: 10s;
+// }
+// .icon-3 {
+//   animation: loader;
+//   animation-duration: 10s;
+//   animation-fill-mode: forwards;
+//   animation-iteration-count: infinite;
+//   animation-delay: 20s;
+// }
 
 /* **************** header ********************** */
 @import "./layout/header";
