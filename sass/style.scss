@@ -2,7 +2,8 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/keyframes";
-@import "./base/fonts";
+/* Polices de caractéres */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 
 // * {
 //   border: 1px solid blue;
@@ -25,6 +26,58 @@ h2 {
 a {
   text-decoration: none;
   color: black;
+}
+/* ******************* loader ******************** */
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  background: white;
+  font-size: 2rem;
+  animation: loader;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  .fas {
+  }
+  // .icon-1 {
+  //   animation: loader;
+  //   animation-duration: 10s;
+  //   animation-fill-mode: both;
+  //   animation-iteration-count: infinite;
+  // }
+  // .icon-2 {
+  //   animation: loader;
+  //   animation-duration: 10s;
+  //   animation-fill-mode: forwards;
+  //   animation-iteration-count: infinite;
+  //   animation-delay: 10s;
+  // }
+  // .icon-3 {
+  //   animation: loader;
+  //   animation-duration: 10s;
+  //   animation-fill-mode: forwards;
+  //   animation-iteration-count: infinite;
+  //   animation-delay: 20s;
+  // }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+    z-index: 2;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    z-index: -1;
+  }
 }
 
 /* **************** header ********************** */
