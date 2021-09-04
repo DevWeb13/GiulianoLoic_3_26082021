@@ -60,9 +60,32 @@
     transform: scale(1);
   }
 }
+@media (min-width: 768px) {
+  #presentation {
+    display: flex;
+    flex-flow: row-reverse;
+  }
+  #presentation nav,
+#presentation #operation {
+    width: 50%;
+  }
+  #presentation nav {
+    border-radius: 0 0 50% 50%;
+  }
+
+  #restaurants .cardsContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 /* Polices de caractéres */
 body {
-  width: 375px;
   font-family: "roboto", serif, sans-serif;
 }
 
@@ -144,7 +167,6 @@ header .logo {
   right: 71%;
 }
 
-/* ********************* main ******************** */
 /* ********************* nav ************************ */
 nav {
   display: flex;

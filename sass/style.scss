@@ -2,6 +2,7 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/keyframes";
+@import "./utils/responsive.scss";
 /* Polices de caractéres */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 
@@ -10,7 +11,7 @@
 // }
 
 body {
-  width: 375px;
+  // width: 375px;
   font-family: "roboto", serif, sans-serif;
 }
 
@@ -35,10 +36,6 @@ a {
 
 /* ****************** .location **************** */
 @import "./pages/location";
-
-/* ********************* main ******************** */
-// main {
-// }
 
 /* ********************* nav ************************ */
 @import "./pages/nav";
