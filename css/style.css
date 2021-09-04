@@ -234,6 +234,18 @@ section {
 .card__icon {
   color: #848484;
   font-size: 1.2rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  width: 20px;
+}
+.card__icon--mobile::after {
+  content: "";
+}
+.card__icon--list::after {
+  content: "";
+}
+.card__icon--store::after {
+  content: "";
 }
 .card__icon--color {
   color: #9356dc;
@@ -277,7 +289,8 @@ section {
 #restaurants a .card__photo--background4 {
   background: url("/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") center/cover;
 }
-#restaurants a .card__photo .new {
+#restaurants a .card__photo .new::after {
+  content: "Nouveau";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -360,11 +373,17 @@ footer ul li {
   align-items: center;
   margin-bottom: 10px;
 }
-footer ul li i {
+footer ul li .icon {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
   margin-right: 10px;
+  width: 20px;
 }
-footer ul li .fa-hands-helping {
-  font-size: 0.7rem;
+footer ul li .icon--ustensils::after {
+  content: "";
+}
+footer ul li .icon--handsHelping::after {
+  content: "";
 }
 footer ul li a {
   color: white;

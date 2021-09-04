@@ -27,6 +27,18 @@ section {
   &__icon {
     color: darken($color: $colorFourth, $amount: 40%);
     font-size: 1.2rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    width: 20px;
+    &--mobile::after {
+      content: "\f3cd";
+    }
+    &--list::after {
+      content: "\f0ca";
+    }
+    &--store::after {
+      content: "\f54e";
+    }
     &--color {
       color: $colorPrimary;
     }

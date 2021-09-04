@@ -30,7 +30,8 @@
           background: url("/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg")
             center/cover;
         }
-        .new {
+        .new::after {
+          content: "Nouveau";
           @include flex-center-center;
           height: 30px;
           width: 80px;

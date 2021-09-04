@@ -14,12 +14,24 @@ footer {
     li {
       @include flex-center;
       margin-bottom: 10px;
-      i {
+      .icon {
+        font-family: "Font Awesome 5 Free";
+        font-weight: bold;
         margin-right: 10px;
+        width: 20px;
+        &--ustensils::after {
+          content: "\f2e7";
+        }
+        &--handsHelping::after {
+          content: "\f4c4";
+        }
       }
-      .fa-hands-helping {
-        font-size: 0.7rem;
-      }
+      // i {
+      //   margin-right: 10px;
+      // }
+      // .fa-hands-helping {
+      //   font-size: 0.7rem;
+      // }
       a {
         color: white;
       }
