@@ -1,7 +1,9 @@
 header {
   height: 65px;
   @include flex-center-center;
-  img {
+  .logo {
+    background: url("/images/logo/ohmyfood.png") center/cover;
     height: 28px;
+    width: 165px;
   }
 }

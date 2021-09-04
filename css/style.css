@@ -120,8 +120,10 @@ header {
   align-items: center;
   justify-content: center;
 }
-header img {
+header .logo {
+  background: url("/images/logo/ohmyfood.png") center/cover;
   height: 28px;
+  width: 165px;
 }
 
 /* ****************** .location **************** */
@@ -134,9 +136,12 @@ header img {
   background-color: #eaeaea;
   box-shadow: inset 0px 6px 20px -10px rgba(0, 0, 0, 0.3);
 }
-.location .fas {
+.location:before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: bold;
   position: absolute;
-  left: 28%;
+  right: 71%;
 }
 
 /* ********************* main ******************** */

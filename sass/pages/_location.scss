@@ -4,8 +4,11 @@
   position: relative;
   background-color: $colorFourth;
   box-shadow: inset 0px 6px 20px -10px rgb(0 0 0 / 30%);
-  .fas {
+  &:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f3c5";
+    font-weight: bold;
     position: absolute;
-    left: 28%;
+    right: 71%;
   }
 }
