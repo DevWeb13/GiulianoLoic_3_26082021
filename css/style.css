@@ -120,6 +120,15 @@ header {
   justify-content: center;
   position: relative;
 }
+header .backArrow::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: bold;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
 header .logo {
   background: url("../images/logo/ohmyfood.png") center/cover;
   height: 28px;

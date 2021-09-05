@@ -2,6 +2,15 @@ header {
   height: 65px;
   @include flex-center-center;
   position: relative;
+  .backArrow::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f060";
+    font-weight: bold;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
   .logo {
     background: url("../images/logo/ohmyfood.png") center/cover;
     height: 28px;

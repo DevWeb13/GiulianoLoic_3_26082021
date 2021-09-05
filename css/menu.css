@@ -90,13 +90,7 @@ header {
   justify-content: center;
   position: relative;
 }
-header .logo {
-  background: url("../images/logo/ohmyfood.png") center/cover;
-  height: 28px;
-  width: 165px;
-}
-
-.backArrow::before {
+header .backArrow::before {
   font-family: "Font Awesome 5 Free";
   content: "";
   font-weight: bold;
@@ -104,6 +98,11 @@ header .logo {
   position: absolute;
   top: 20px;
   left: 20px;
+}
+header .logo {
+  background: url("../images/logo/ohmyfood.png") center/cover;
+  height: 28px;
+  width: 165px;
 }
 
 /*# sourceMappingURL=menu.css.map */
