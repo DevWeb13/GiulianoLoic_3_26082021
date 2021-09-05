@@ -4,13 +4,23 @@ footer {
   flex-direction: column;
   color: white;
   padding: 0 0 15px 20px;
+  @include medium {
+    padding-left: 0;
+  }
   h3 {
     font-family: "shrikhand", serif, sans-serif;
+    @include medium {
+      text-align: center;
+    }
   }
   ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
+    @include medium {
+      display: flex;
+      justify-content: space-around;
+    }
     li {
       @include flex-center;
       margin-bottom: 10px;

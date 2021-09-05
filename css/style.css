@@ -60,30 +60,6 @@
     transform: scale(1);
   }
 }
-@media (min-width: 768px) {
-  #presentation {
-    display: flex;
-    flex-flow: row-reverse;
-  }
-  #presentation nav,
-#presentation #operation {
-    width: 50%;
-  }
-  #presentation nav {
-    border-radius: 0 0 50% 50%;
-  }
-
-  #restaurants .cardsContainer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  ul {
-    display: flex;
-    justify-content: space-around;
-  }
-}
 /* Polices de caractéres */
 body {
   font-family: "roboto", serif, sans-serif;
@@ -149,22 +125,31 @@ header .logo {
   width: 165px;
 }
 
+/* *************** presentation **************** */
+@media (min-width: 768px) {
+  #presentation {
+    display: flex;
+    flex-flow: row-reverse;
+  }
+}
+
 /* ****************** .location **************** */
 .location {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50px;
-  position: relative;
   background-color: #eaeaea;
   box-shadow: inset 0px 6px 20px -10px rgba(0, 0, 0, 0.3);
 }
-.location:before {
+.location p {
+  margin-right: 20px;
+}
+.location p:before {
   font-family: "Font Awesome 5 Free";
   content: "";
   font-weight: bold;
-  position: absolute;
-  right: 71%;
+  margin-right: 20px;
 }
 
 /* ********************* nav ************************ */
@@ -177,6 +162,12 @@ nav {
   padding: 40px 5%;
   background-color: whitesmoke;
   /* == #f5f5f5(couleur sur la maquette)*/
+}
+@media (min-width: 768px) {
+  nav {
+    border-radius: 50%;
+    width: 50%;
+  }
 }
 nav h1 {
   font-size: 1.45rem;
@@ -218,6 +209,12 @@ section {
   flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  #operation {
+    width: 50%;
+  }
+}
+
 .cardsContainer {
   display: flex;
   align-items: center;
@@ -236,7 +233,7 @@ section {
 }
 
 .card {
-  /* Déclage de tout le contenu vers la gauche */
+  /* Décalage de tout le contenu vers la gauche */
 }
 .card__number, .card__icon, .card__text {
   display: flex;
@@ -282,6 +279,13 @@ section {
 /* **************** restaurants **************** */
 #restaurants {
   background-color: whitesmoke;
+}
+@media (min-width: 768px) {
+  #restaurants .cardsContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 #restaurants a {
   margin-bottom: 19px;
@@ -389,13 +393,29 @@ footer {
   color: white;
   padding: 0 0 15px 20px;
 }
+@media (min-width: 768px) {
+  footer {
+    padding-left: 0;
+  }
+}
 footer h3 {
   font-family: "shrikhand", serif, sans-serif;
+}
+@media (min-width: 768px) {
+  footer h3 {
+    text-align: center;
+  }
 }
 footer ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+@media (min-width: 768px) {
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 footer ul li {
   display: flex;

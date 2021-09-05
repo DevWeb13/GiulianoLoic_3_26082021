@@ -1,5 +1,12 @@
 #restaurants {
   background-color: lighten($color: $colorFourth, $amount: 4.4%);
+  @include medium {
+    .cardsContainer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
   a {
     margin-bottom: 19px;
     width: 345px;

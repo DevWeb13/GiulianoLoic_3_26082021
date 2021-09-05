@@ -24,28 +24,3 @@ $breakpoints: (
     @content;
   }
 }
-
-@include medium {
-  #presentation {
-    display: flex;
-    flex-flow: row-reverse;
-    nav,
-    #operation {
-      width: 50%;
-    }
-    nav {
-      border-radius: 0 0 50% 50%;
-    }
-  }
-  #restaurants {
-    .cardsContainer {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-  }
-  ul {
-    display: flex;
-    justify-content: space-around;
-  }
-}

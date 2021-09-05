@@ -2,7 +2,7 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/keyframes";
-@import "./utils/responsive.scss";
+@import "./utils/responsive";
 /* Polices de caractéres */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 
@@ -33,6 +33,8 @@ a {
 
 /* **************** header ********************** */
 @import "./layout/header";
+/* *************** presentation **************** */
+@import "./pages/presentation";
 
 /* ****************** .location **************** */
 @import "./pages/location";

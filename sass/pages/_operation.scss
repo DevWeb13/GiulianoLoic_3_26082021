@@ -3,12 +3,17 @@ section {
   display: flex;
   flex-direction: column;
 }
+#operation {
+  @include medium {
+    width: 50%;
+  }
+}
 .cardsContainer {
   @include flex-center-column;
 }
 @import "../components/card";
 .card {
-  /* Déclage de tout le contenu vers la gauche */
+  /* Décalage de tout le contenu vers la gauche */
   &__number,
   &__icon,
   &__text {
