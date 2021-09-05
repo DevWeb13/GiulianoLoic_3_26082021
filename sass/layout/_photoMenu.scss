@@ -1,0 +1,29 @@
+.photoMenu {
+  height: 220px;
+  display: flex;
+  &::before {
+    content: "";
+    height: 255px;
+    width: 100%;
+  }
+}
+.photo1 {
+  &::before {
+    @include background1;
+  }
+}
+.photo2 {
+  &::before {
+    @include background2;
+  }
+}
+.photo3 {
+  &::before {
+    @include background3;
+  }
+}
+.photo4 {
+  &::before {
+    @include background4;
+  }
+}
