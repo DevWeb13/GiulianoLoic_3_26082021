@@ -1,6 +1,7 @@
 header {
   height: 65px;
   @include flex-center-center;
+  position: relative;
   .logo {
     background: url("../images/logo/ohmyfood.png") center/cover;
     height: 28px;

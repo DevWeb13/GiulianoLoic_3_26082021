@@ -1,3 +1,36 @@
+/* ***************** IMPORT ******************* */
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/keyframes";
+@import "./utils/responsive";
+/* Polices de caractéres */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+
 body {
-  background: blue;
+  width: 375px;
+  font-family: "roboto", serif, sans-serif;
+}
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+h2 {
+  margin-bottom: 25px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* ******************* header *************** */
+@import "./layout/header";
+.backArrow::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f060";
+  font-weight: bold;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
