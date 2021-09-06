@@ -1,0 +1,123 @@
+#menuContainer {
+  background: lighten($color: $colorFourth, $amount: 4.4%);
+  border-radius: 25px 25px 0 0;
+  padding: 30px 15px 0 15px;
+
+  h1 {
+    font-family: "Shrikhand", cursive;
+    font-size: 1.7rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+    &:hover {
+      &::before {
+        transition: 2s ease-in-out;
+        transform: scale(1);
+      }
+      &::after {
+        transition: 2s ease-in-out;
+        opacity: 0;
+      }
+    }
+    &::before {
+      content: "\f004";
+      font-family: "Font Awesome 5 Free";
+      position: absolute;
+      font-weight: bold;
+      right: 0;
+      transform: scale(0);
+      background: -webkit-linear-gradient(#ff79da, #9356dc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &::after {
+      content: "\f004";
+      font-family: "Font Awesome 5 Free";
+    }
+  }
+  h2 {
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 13px;
+    font-weight: 100;
+    font-size: 1rem;
+    &::after {
+      content: "";
+      display: flex;
+      height: 2px;
+      width: 40px;
+      background: $colorTertiary;
+      margin-top: 5px;
+    }
+  }
+  .cardsContainer {
+    @include flex-center-center-column;
+    @import "../components/card";
+    .card {
+      height: 70px;
+      margin-bottom: 13px;
+      justify-content: space-between;
+      overflow: hidden;
+
+      &:hover {
+        .card__text {
+          min-width: calc(75% - 60px);
+        }
+        .card__coche {
+          position: relative;
+          left: 1px;
+          &::after {
+            transition: transform 0.5s ease-in-out;
+            transform: rotate(360deg);
+          }
+        }
+      }
+      &__text {
+        @include card__text;
+        min-width: 75%;
+        transition: all 0.5s ease-in-out;
+        &--size {
+          font-size: 0.9rem;
+        }
+        &--bold,
+        &--size {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      }
+      &__price {
+        padding: 30px 15px 0 15px;
+      }
+      &__coche {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        min-width: 60px;
+        background-color: $colorTertiary;
+        transition: all 0.5s ease-in-out;
+        position: relative;
+        left: 17px;
+        &::after {
+          content: "\f058";
+          font-family: "Font Awesome 5 Free";
+          font-weight: bold;
+          color: white;
+          font-size: 1.25rem;
+          transform: rotate(0);
+        }
+      }
+    }
+    @import "../components/button";
+    .button {
+      margin-top: 36px;
+      margin-bottom: 85px;
+      width: 55%;
+    }
+  }
+}

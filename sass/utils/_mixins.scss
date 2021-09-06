@@ -56,3 +56,19 @@
 @mixin background4 {
   background: map-get($background, leDeliceDesSens);
 }
+
+/* ***************** card__text **************** */
+@mixin card__text {
+  flex-direction: column;
+  align-items: baseline;
+  position: sticky;
+  padding-left: 4%;
+  font-size: 1.1rem;
+  line-height: 26px;
+  &--bold {
+    font-weight: bold;
+  }
+  &--color {
+    color: darken($color: $colorFourth, $amount: 40%);
+  }
+}

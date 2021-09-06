@@ -1,29 +1,31 @@
 .photoMenu {
   height: 220px;
   display: flex;
-  &::before {
+  // overflow: hidden;
+  &::after {
     content: "";
     height: 255px;
     width: 100%;
+    z-index: -1;
   }
 }
 .photo1 {
-  &::before {
+  &::after {
     @include background1;
   }
 }
 .photo2 {
-  &::before {
+  &::after {
     @include background2;
   }
 }
 .photo3 {
-  &::before {
+  &::after {
     @include background3;
   }
 }
 .photo4 {
-  &::before {
+  &::after {
     @include background4;
   }
 }
