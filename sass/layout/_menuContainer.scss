@@ -57,6 +57,16 @@
   .cardsContainer {
     @include flex-center-center-column;
     @import "../components/card";
+    &--animation1 {
+      animation: apparitionProgressive 1s ease-in;
+    }
+    &--animation2 {
+      animation: apparitionProgressive 2s ease-in;
+    }
+    &--animation3 {
+      animation: apparitionProgressive 3s ease-in;
+    }
+
     .card {
       // height: 70px;
 
