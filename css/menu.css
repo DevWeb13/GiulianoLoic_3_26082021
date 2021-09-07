@@ -236,7 +236,7 @@ header .logo {
   padding-left: 4%;
   font-size: 1.1rem;
   line-height: 26px;
-  min-width: 76%;
+  min-width: 78.2%;
   transition: all 0.5s ease-in-out;
 }
 #menuContainer .cardsContainer .card__text--bold {
@@ -254,7 +254,7 @@ header .logo {
   overflow: hidden;
 }
 #menuContainer .cardsContainer .card__price {
-  padding: 30px 15px 0 15px;
+  padding: 23px 15px 0 15px;
 }
 #menuContainer .cardsContainer .card__coche {
   display: flex;

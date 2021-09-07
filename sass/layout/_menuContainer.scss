@@ -78,7 +78,7 @@
       }
       &__text {
         @include card__text;
-        min-width: 76%;
+        min-width: 78.2%;
         transition: all 0.5s ease-in-out;
         &--size {
           font-size: 0.9rem;
@@ -91,7 +91,7 @@
         }
       }
       &__price {
-        padding: 30px 15px 0 15px;
+        padding: 23px 15px 0 15px;
       }
       &__coche {
         display: flex;
