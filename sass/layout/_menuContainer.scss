@@ -62,7 +62,7 @@
       margin-bottom: 13px;
       justify-content: space-between;
       overflow: hidden;
-
+      cursor: pointer;
       &:hover {
         .card__text {
           min-width: calc(75% - 60px);
@@ -78,7 +78,7 @@
       }
       &__text {
         @include card__text;
-        min-width: 75%;
+        min-width: 76%;
         transition: all 0.5s ease-in-out;
         &--size {
           font-size: 0.9rem;

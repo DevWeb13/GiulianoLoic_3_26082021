@@ -216,6 +216,7 @@ header .logo {
   margin-bottom: 13px;
   justify-content: space-between;
   overflow: hidden;
+  cursor: pointer;
 }
 #menuContainer .cardsContainer .card:hover .card__text {
   min-width: calc(75% - 60px);
@@ -235,7 +236,7 @@ header .logo {
   padding-left: 4%;
   font-size: 1.1rem;
   line-height: 26px;
-  min-width: 75%;
+  min-width: 76%;
   transition: all 0.5s ease-in-out;
 }
 #menuContainer .cardsContainer .card__text--bold {
