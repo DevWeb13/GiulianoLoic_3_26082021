@@ -58,10 +58,12 @@
     @include flex-center-center-column;
     @import "../components/card";
     .card {
-      height: 70px;
+      // height: 70px;
+
       margin-bottom: 13px;
       justify-content: space-between;
       overflow: hidden;
+      align-items: unset;
       cursor: pointer;
       &:hover {
         .card__text {
@@ -70,6 +72,7 @@
         .card__coche {
           position: relative;
           left: 1px;
+
           &::after {
             transition: transform 0.5s ease-in-out;
             transform: rotate(360deg);
@@ -82,6 +85,10 @@
         transition: all 0.5s ease-in-out;
         &--size {
           font-size: 0.9rem;
+          padding-bottom: 9px;
+        }
+        &--bold {
+          padding-top: 9px;
         }
         &--bold,
         &--size {
@@ -91,13 +98,13 @@
         }
       }
       &__price {
-        padding: 23px 15px 0 15px;
+        padding: 38px 15px 0 15px;
       }
       &__coche {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100%;
+
         min-width: 60px;
         background-color: $colorTertiary;
         transition: all 0.5s ease-in-out;
