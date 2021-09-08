@@ -82,7 +82,6 @@
 /* ********************* background ************* */
 /* Polices de caractéres */
 body {
-  width: 375px;
   font-family: "roboto", serif, sans-serif;
 }
 
@@ -137,6 +136,38 @@ header .logo {
   z-index: -1;
 }
 
+@media (min-width: 576px) {
+  .photoMenu {
+    height: 300px;
+  }
+  .photoMenu::after {
+    height: 325px;
+  }
+}
+@media (min-width: 768px) {
+  .photoMenu {
+    height: 390px;
+  }
+  .photoMenu::after {
+    height: 500px;
+  }
+}
+@media (min-width: 992px) {
+  .photoMenu {
+    height: 470px;
+  }
+  .photoMenu::after {
+    height: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .photoMenu {
+    height: 550px;
+  }
+  .photoMenu::after {
+    height: 730px;
+  }
+}
 .photo1::after {
   background: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") bottom/cover;
 }

@@ -9,6 +9,39 @@
     z-index: -1;
   }
 }
+@include small {
+  .photoMenu {
+    height: 300px;
+    &::after {
+      height: 325px;
+    }
+  }
+}
+
+@include medium {
+  .photoMenu {
+    height: 390px;
+    &::after {
+      height: 500px;
+    }
+  }
+}
+@include large {
+  .photoMenu {
+    height: 470px;
+    &::after {
+      height: 600px;
+    }
+  }
+}
+@include x-large {
+  .photoMenu {
+    height: 550px;
+    &::after {
+      height: 730px;
+    }
+  }
+}
 .photo1 {
   &::after {
     @include background1;
