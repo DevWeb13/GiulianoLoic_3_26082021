@@ -4,12 +4,10 @@
   padding: 30px 15px 0 15px;
 
   h1 {
+    @include flex-center-between;
     font-family: "Shrikhand", cursive;
     font-size: 1.7rem;
     font-weight: 400;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: relative;
     margin-right: 20px;
     cursor: pointer;
@@ -39,6 +37,11 @@
       font-family: "Font Awesome 5 Free";
     }
   }
+  @include small {
+    h1 {
+      margin: 0 10%;
+    }
+  }
   h2 {
     text-transform: uppercase;
     margin-top: 30px;
@@ -54,6 +57,16 @@
       margin-top: 5px;
     }
   }
+  @include small {
+    h2 {
+      text-align: center;
+      &::after {
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 40px;
+      }
+    }
+  }
   .cardsContainer {
     @include flex-center-center-column;
     @import "../components/card";
@@ -66,10 +79,12 @@
     &--animation3 {
       animation: apparitionProgressive 3s ease-in;
     }
-
+    @include large {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
     .card {
-      // height: 70px;
-
       margin-bottom: 13px;
       justify-content: space-between;
       overflow: hidden;
@@ -82,7 +97,6 @@
         .card__coche {
           position: relative;
           left: 1px;
-
           &::after {
             transition: transform 0.5s ease-in-out;
             transform: rotate(360deg);
@@ -114,7 +128,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
         min-width: 60px;
         background-color: $colorTertiary;
         transition: all 0.5s ease-in-out;
@@ -129,12 +142,18 @@
           transform: rotate(0);
         }
       }
+      @include large {
+        width: 30%;
+      }
     }
-    @import "../components/button";
-    .button {
-      margin-top: 36px;
-      margin-bottom: 85px;
-      width: 55%;
+  }
+  @import "../components/button";
+  .button {
+    width: 55%;
+    margin: 36px 50% 85px 50%;
+    max-width: 850px;
+    @include large {
+      min-width: 55%;
     }
   }
 }

@@ -20,6 +20,12 @@
   display: flex;
   align-items: center;
 }
+
+@mixin flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 /* ****************** responsive *************** */
 @mixin small {
   @media (min-width: map-get($breakpoints, small)) {

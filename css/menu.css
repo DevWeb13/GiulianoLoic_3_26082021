@@ -192,12 +192,12 @@ header .logo {
   padding: 30px 15px 0 15px;
 }
 #menuContainer h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-family: "Shrikhand", cursive;
   font-size: 1.7rem;
   font-weight: 400;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
   margin-right: 20px;
   cursor: pointer;
@@ -225,6 +225,11 @@ header .logo {
   content: "";
   font-family: "Font Awesome 5 Free";
 }
+@media (min-width: 576px) {
+  #menuContainer h1 {
+    margin: 0 10%;
+  }
+}
 #menuContainer h2 {
   text-transform: uppercase;
   margin-top: 30px;
@@ -239,6 +244,16 @@ header .logo {
   width: 40px;
   background: #99e2d0;
   margin-top: 5px;
+}
+@media (min-width: 576px) {
+  #menuContainer h2 {
+    text-align: center;
+  }
+  #menuContainer h2::after {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 40px;
+  }
 }
 #menuContainer .cardsContainer {
   display: flex;
@@ -264,6 +279,13 @@ header .logo {
 }
 #menuContainer .cardsContainer--animation3 {
   animation: apparitionProgressive 3s ease-in;
+}
+@media (min-width: 992px) {
+  #menuContainer .cardsContainer {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }
 #menuContainer .cardsContainer .card {
   margin-bottom: 13px;
@@ -332,7 +354,12 @@ header .logo {
   font-size: 1.25rem;
   transform: rotate(0);
 }
-#menuContainer .cardsContainer .button {
+@media (min-width: 992px) {
+  #menuContainer .cardsContainer .card {
+    width: 30%;
+  }
+}
+#menuContainer .button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,16 +375,21 @@ header .logo {
   cursor: pointer;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
 }
-#menuContainer .cardsContainer .button:hover {
+#menuContainer .button:hover {
   /* Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir.
   L’ombre portée devra également être plus visible.*/
   background: linear-gradient(171deg, #ff93e1 0%, #a16be0 100%);
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.7);
 }
-#menuContainer .cardsContainer .button {
-  margin-top: 36px;
-  margin-bottom: 85px;
+#menuContainer .button {
   width: 55%;
+  margin: 36px 50% 85px 50%;
+  max-width: 850px;
+}
+@media (min-width: 992px) {
+  #menuContainer .button {
+    min-width: 55%;
+  }
 }
 
 /* ***************** footer ************** */
