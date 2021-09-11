@@ -128,7 +128,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-width: 60px;
+        min-width: 70px;
         background-color: $colorTertiary;
         transition: all 0.5s ease-in-out;
         position: relative;
@@ -138,7 +138,7 @@
           font-family: "Font Awesome 5 Free";
           font-weight: bold;
           color: white;
-          font-size: 1.25rem;
+          font-size: 1.5rem;
           transform: rotate(0);
         }
       }

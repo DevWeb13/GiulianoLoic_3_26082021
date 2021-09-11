@@ -15,6 +15,7 @@
     width: 100px;
     height: 90px;
     overflow: hidden;
+    animation: iconsSpin 6s infinite;
     &::after {
       content: "  ";
       text-align: center;
