@@ -91,6 +91,7 @@
 /* ********************* background ************* */
 /* Polices de caractéres */
 body {
+  width: 375px;
   font-family: "roboto", serif, sans-serif;
 }
 
@@ -187,15 +188,27 @@ section {
   height: 50px;
   background-color: #eaeaea;
   box-shadow: inset 0px 6px 20px -10px rgba(0, 0, 0, 0.3);
+  padding-left: 25px;
 }
-.location p {
-  margin-right: 20px;
-}
-.location p:before {
+.location label::before {
   font-family: "Font Awesome 5 Free";
   content: "";
   font-weight: bold;
   margin-right: 20px;
+}
+.location input {
+  text-decoration: none;
+  border: transparent;
+  background-color: transparent;
+  color: black;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+.location input::placeholder {
+  color: black;
+}
+.location input:focus-visible {
+  outline: transparent;
 }
 
 /* ********************* nav ************************ */

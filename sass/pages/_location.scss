@@ -3,13 +3,26 @@
   height: 50px;
   background-color: $colorFourth;
   box-shadow: inset 0px 6px 20px -10px rgb(0 0 0 / 30%);
-  p {
+  padding-left: 25px;
+  label::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f3c5";
+    font-weight: bold;
     margin-right: 20px;
-    &:before {
-      font-family: "Font Awesome 5 Free";
-      content: "\f3c5";
-      font-weight: bold;
-      margin-right: 20px;
+  }
+  input {
+    text-decoration: none;
+    border: transparent;
+    background-color: transparent;
+    color: black;
+    font-size: 0.9rem;
+
+    margin-top: 2px;
+    &::placeholder {
+      color: black;
+    }
+    &:focus-visible {
+      outline: transparent;
     }
   }
 }
