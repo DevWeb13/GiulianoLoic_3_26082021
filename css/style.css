@@ -9,7 +9,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @keyframes iconsLoader {
   0% {
-    opacity: 0;
+    opacity: 1;
   }
   16% {
     opacity: 1;
