@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "sassAccueil": "sass --watch ./sass/style.scss ./css/style.css --style compressed",
-    "sassMenu": "sass --watch ./sass/menu.scss ./css/menu.css --style compressed"
+    "sassMenu": "sass --watch ./sass/menu.scss ./css/menu.css --style compressed",
+    "prefixAccueil": "postcss css/style.css --use autoprefixer -d css/prefixed",
+    "prefixMenu": "postcss css/menu.css --use autoprefixer -d css/prefixed"
   },
   "repository": {
     "type": "git",
@@ -13,6 +15,7 @@
   },
   "author": "DevWeb13",
   "license": "ISC",
+  
   "bugs": {
     "url": "https://github.com/DevWeb13/GiulianoLoic_3_26082021/issues"
   },
