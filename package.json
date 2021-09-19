@@ -4,8 +4,8 @@
   "description": "Projet 3 Ohmyfood OpenClassRoom Developpeur Front-end par DevWeb13",
   "main": "index.js",
   "scripts": {
-    "sassAccueil": "sass --watch ./sass/style.scss ./css/style.css",
-    "sassMenu": "sass --watch ./sass/menu.scss ./css/menu.css"
+    "sassAccueil": "sass --watch ./sass/style.scss ./css/style.css --style compressed",
+    "sassMenu": "sass --watch ./sass/menu.scss ./css/menu.css --style compressed"
   },
   "repository": {
     "type": "git",
