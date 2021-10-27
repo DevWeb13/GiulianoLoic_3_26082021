@@ -74,4 +74,5 @@ pour que vous puissiez débriefer ensemble.
 * Assurer la cohérence graphique d'un site web
 
 # [SITE FINAL](https://devweb13.github.io/GiulianoLoic_3_26082021/)
+# [PRESENTATION DU PROJET](https://docs.google.com/presentation/d/17fkIb73hBGOrAg0wGccqpPlh4RErDFlIACjiBzhRwAw/edit?usp=sharing)
 
