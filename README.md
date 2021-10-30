@@ -1,3 +1,11 @@
+## Table of Contents
+1. [Dynamisez une page web avec des animations CSS](#Dynamisez-une-page-web-avec-des-animations-CSS)
+    * [Livrables](#Livrables)
+    * [Soutenance](#Soutenance)
+2. [Compétences évaluées](#Compétences-évaluées)
+3. [SITE FINAL](#SITE-FINAL)
+
+
 # Dynamisez une page web avec des animations CSS
 
 ### Scénario
@@ -38,7 +46,7 @@ Vous trouvez [les maquettes](https://s3-eu-west-1.amazonaws.com/course.oc-static
 Vous avez désormais tous les éléments pour construire ce site mobile. Vous vous lancez dans
 cette nouvelle aventure !
 
-### Livrables
+## Livrables
 
 * Un lien vers votre repository GitHub  
 * Un lien vers la page web du site
@@ -55,7 +63,7 @@ Le repo GitHub doit être nommé avec la convention suivante :
 Nomcomplet_#_Datedémarrage. Le # correspond au numéro du projet sur le parcours et
 la date doit être au format jjmmaaaa. Par exemple, FrancoisLenotre_3_05032020.
 
-### Soutenance
+## Soutenance
 
 La soutenance, d'une durée de 30 minutes, se déroule en 3 étapes :
 
@@ -65,7 +73,7 @@ expliquerez vos choix techniques concernant la conception du site. (15 minutes)
 3. Enfin, votre évaluateur reprendra pleinement son rôle d’évaluateur pendant 5 minutes
 pour que vous puissiez débriefer ensemble.
 
-## Compétences évaluées
+# Compétences évaluées
 
 * Mettre en place une structure de navigation pour un site web
 
@@ -74,5 +82,4 @@ pour que vous puissiez débriefer ensemble.
 * Assurer la cohérence graphique d'un site web
 
 # [SITE FINAL](https://devweb13.github.io/GiulianoLoic_3_26082021/)
-# [PRESENTATION DU PROJET](https://docs.google.com/presentation/d/17fkIb73hBGOrAg0wGccqpPlh4RErDFlIACjiBzhRwAw/edit?usp=sharing)
 
