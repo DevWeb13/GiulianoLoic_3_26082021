@@ -3,7 +3,8 @@
     * [Livrables](#Livrables)
     * [Soutenance](#Soutenance)
 2. [Compétences évaluées](#Compétences-évaluées)
-3. [SITE FINAL](#SITE-FINAL)
+3. [Site final](#Site-final)
+4. [Présentation du projet](#Présentation-du-projet)
 
 
 # Dynamisez une page web avec des animations CSS
@@ -81,5 +82,6 @@ pour que vous puissiez débriefer ensemble.
 
 * Assurer la cohérence graphique d'un site web
 
-# [SITE FINAL](https://devweb13.github.io/GiulianoLoic_3_26082021/)
+# [Site final](https://devweb13.github.io/GiulianoLoic_3_26082021/)
+# [Présentation du projet](https://docs.google.com/presentation/d/17fkIb73hBGOrAg0wGccqpPlh4RErDFlIACjiBzhRwAw/edit?usp=sharing)
 
